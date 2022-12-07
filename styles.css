@@ -27,6 +27,11 @@ header {
     justify-content: end;
 }
 
+header.advanced {
+    width: 100%;
+    justify-content: space-between;
+}
+
 .nav {
     list-style: none;
 }
@@ -47,6 +52,11 @@ header {
     text-decoration: underline;
 }
 
+.advancedLogo {
+    width: 90px;
+    margin: 12px;
+}
+
 .search-container {
     position: absolute;
     top: 33%;
@@ -55,6 +65,40 @@ header {
     margin: 0 auto;
     width: 500px;
     text-align: center;
+}
+
+.formAdvanced {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formAdvanced label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formAdvanced input[type="text"],
+  select {
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+  .formAdvanced .btn {
+    background-color: #4285f4;
+    border-radius: 2px;
+    color: #fff;
+    width: fit-content;
+    font-weight: 600;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.formAdvanced .btn:hover {
+    background-color: #2475f7;
 }
 
 .search-bar {
