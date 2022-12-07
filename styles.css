@@ -43,6 +43,10 @@ header {
     font-size: 14px;
 }
 
+.nav-links:hover {
+    text-decoration: underline;
+}
+
 .search-container {
     position: absolute;
     top: 33%;
@@ -73,6 +77,10 @@ header {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.image-search-button {
+    width: fit-content;
 }
 
 .search-button:hover {
