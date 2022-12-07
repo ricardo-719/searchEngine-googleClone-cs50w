@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Google Advanced Search</title>
+  <style>
+    /* Style the main container */
+    .container {
+      width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Style the search form */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Style the form labels */
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    /* Style the form input fields */
+    input[type="text"],
+    select {
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+
+    /* Style the "Advanced Search" button */
+    .btn {
+      background-color: #4285f4;
+      color: #fff;
+      padding: 8px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Style the "Advanced Search" link */
+    .advanced-link {
+      margin-top: 10px;
+      text-decoration: none;
+      color: #4285f4;
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="container">
+    <h1>Google Advanced Search</h1>
+    <form>
+      <label>Search for:</label>
+      <input type="text" placeholder="Enter your search terms">
+
+      <label>File type:</label>
+      <select>
+        <option value="">All</option>
+        <option value="pdf">PDF</option>
+        <option value="ppt">PowerPoint</option>
+        <option value="doc">Word</option>
+        <option value="xls">Excel</option>
+      </select>
+
+      <label>Search within a site or domain:</label>
+      <input type="text" placeholder="Enter a site or domain">
+
+      <label>Language:</label>
+      <select>
+        <option value="">Any language</option>
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="es">Spanish</option>
+      </select>
+
+      <button class="btn">Advanced Search</button>
+
+      <a href="#" class="advanced-link">Advanced search</a>
+    </form>
+  </div>
 </body>
 </html>

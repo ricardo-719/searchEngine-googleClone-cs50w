@@ -5,18 +5,24 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Google Search</h1>
-  <div class="search-container">
-    <form action="https://www.google.com/search">
-        <div>
-            <input class="search-bar" type="text" name="q" placeholder="Search" />
-        </div>
-        <input class="search-button" type="submit" value="Google Search" />
-        <input class="search-button" type="button" value="I'm Feeling Lucky" onclick="window.location.href='https://www.google.com/search?btnI';" />
-    </form>
-    <p>
-        <a href="image-search.html">Image Search</a> | <a href="advanced-search.html">Advanced Search</a>
-    </p>
-  </div>
+  <header>
+    <ul class="nav">
+      <li><a class="nav-links" href="image-search.html">Images</a> | 
+        <a class="nav-links" href="advanced-search.html">Advanced</a>
+      </li>
+    </ul>
+  </header>
+  <main class="container">
+    <div class="search-container">
+      <img src="/images/Google.png" alt="Google Logo">
+      <form action="https://www.google.com/search">
+          <div>
+              <input class="search-bar" type="text" title="Search" name="q" placeholder="Search" />
+          </div>
+          <input class="search-button" type="submit" value="Google Search" />
+          <input class="search-button" type="button" value="I'm Feeling Lucky"/>
+      </form>
+    </div>
+  </main>
 </body>
 </html>
