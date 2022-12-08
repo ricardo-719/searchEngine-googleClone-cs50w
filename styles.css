@@ -67,25 +67,58 @@ header.advanced {
     text-align: center;
 }
 
-.formAdvanced {
-    display: flex;
-    flex-direction: column;
-
+#advanced-search {
+    position: fixed;
+    top: 300px;
+    left: 300px;
 }
 
-.formAdvanced label {
-    font-weight: bold;
-    margin-bottom: 5px;
+.advancedsub {
+    position: fixed;
+    top:  90px;
+    left: 50px;
+    color: red;
+    font-weight: 100;
+    font-size: 21px;
 }
 
-.formAdvanced input[type="text"],
-  select {
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+table {
+    width: max-content;
 }
 
-  .formAdvanced .btn {
+th {
+    font-weight: 400;
+    font-size: medium;
+    text-align: left;
+}
+
+td * {
+    display: inline;
+}
+
+td {
+    text-align: left;
+    font-size: small;
+    padding: 6px;
+}
+
+.explainers {
+    font-size: 11px;
+}
+
+td input {
+    width: 450px;
+    min-height: 28px;
+    border: 2px solid lightgray;
+    border-radius: 2px;
+}
+
+td input:focus {
+    outline: none;
+    border: 1px solid #2475f7;
+}
+
+.btn {
     background-color: #4285f4;
     border-radius: 2px;
     color: #fff;
@@ -94,10 +127,11 @@ header.advanced {
     padding: 8px 14px;
     border: none;
     cursor: pointer;
-    align-self: flex-end;
+    float: right;
+    margin-right: -120px;
 }
 
-.formAdvanced .btn:hover {
+.btn:hover {
     background-color: #2475f7;
 }
 

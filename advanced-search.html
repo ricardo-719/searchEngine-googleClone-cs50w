@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="advanced">
-    <img class="advancedLogo" src="images/Google.png" alt="Google Logo">
+    <a href="index.html"><img class="advancedLogo" src="images/Google.png" alt="Google Logo"></a>
     <ul class="nav">
       <li>
         <a class="nav-links" href="index.html">Back to Google Search</a>
@@ -14,32 +14,37 @@
     </ul>
   </header>
   <main class="container">
-    <div class="search-container">
-      <form class="formAdvanced">
-        <label>Search for:</label>
-        <input type="text" placeholder="Enter your search terms">
-        <label>File type:</label>
-        <select>
-          <option value="">All</option>
-          <option value="pdf">PDF</option>
-          <option value="ppt">PowerPoint</option>
-          <option value="doc">Word</option>
-          <option value="xls">Excel</option>
-        </select>
-    
-        <label>Search within a site or domain:</label>
-        <input type="text" placeholder="Enter a site or domain">
-    
-        <label>Language:</label>
-        <select>
-          <option value="">Any language</option>
-          <option value="en">English</option>
-          <option value="fr">French</option>
-          <option value="de">German</option>
-          <option value="es">Spanish</option>
-        </select>
-    
-        <button class="btn">Advanced Search</button>
+    <span class="advancedsub"><p>Advanced Search</p></span>
+    <div class="search-container" id="advanced-search">
+      <form action="https://www.google.com/search?">
+      <table>
+        <tr>
+          <th>Find pages with...</th>
+          <th></th>
+          <th class="topExplain">To do this in the search box.</th>
+        </tr>
+        <tr>
+          <td><label for="all">all these words:</label></td>
+          <td><input type="text" name="as_q"></td>
+          <td class="explainers">Type the important words: <b>tri-colour rat terrier</b></td>
+        </tr>
+        <tr>
+          <td><label for="exact">this exact word or phrase:</label></td>
+          <td><input type="text" name="as_epq"></td>
+          <td class="explainers">Put exact words in quotes: <b>"rat terrier"</b></td>
+        </tr>
+        <tr>
+          <td><label for="any">any of these words:</label></td>
+          <td><input type="text" name="as_oq"></td>
+          <td class="explainers">Type <b>OR</b> between all the words you want: <b>miniature OR standard</b></td>
+        </tr>
+        <tr>
+          <td><label for="none">none of these words:</label></td>
+          <td><input type="text" name="as_eq"></td>
+          <td class="explainers">Put a minus sign just before words that you don't want: <b>-rodent, -"Jack Russell"</b></td>
+        </tr>
+      </table>
+      <button class="btn">Advanced Search</button>
       </form>
     </div>
   </main>
